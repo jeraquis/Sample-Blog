@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+.container {
+    display:grid;
+    grid-template-columns: 100%;
+    /* grid-template-rows: 200px 200px 1fr 1fr 200px; */
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-areas: 
+    "hd"
+    "nb"
+    "cont"
+    "sd"
+    "ft";
+}
+
+.header {
+    grid-area:hd;
+    background-color: black;
+    background-image: url("../images/swnportrait.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+.navbar {
+    grid-area:nb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.content {
+    grid-area:cont;
+    background-color: #022340;
+}
+
+.sidebar {
+    grid-area:sd;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: 100%;
+    grid-template-rows: ;
+    grid-template-areas: 
+        "ga"
+        "ab"
+        "bl";
+    background-color: #3F4859;
+}
+
+.footer {
+    grid-area:ft;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    font-family: 'Dosis', sans-serif;
+}
+
+/* Content */
+
+.post{
+    padding: 5%;
+    border: 1px solid black;
+    border-radius: 30px 10px 30px 10px;
+    margin: 2% 5% 2% 5%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+.post2 {
+    padding: 5%;
+    border: 1px solid black;
+    border-radius: 30px 10px 30px 10px;
+    margin: 2% 5% 2% 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    background-image: url("../images/swnblank.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.post2text {
+    color: white;
+}
+
+/* Navbar and footer flexbox divs */
+
+.navbox {
+    padding: 4px;
+}
+
+.navbox:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+/* Sidebar nested grid divs */
+.about {
+    grid-area: ab;
+}
+
+.gallery {
+    grid-area: ga;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, 200px);
+    grid-template-areas: 
+        "p1"
+        "p2"
+        "p3"
+        "p4";
+}
+
+.photo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.photo1 {
+    grid-area: p1;
+    background-image: url("../images/swncolosseum.jpg");
+}
+
+.photo2 {
+    grid-area: p2;
+    background-image: url("../images/swnvenice.jpg");
+}
+
+.photo3 {
+    grid-area: p3;
+    background-image: url("../images/swndavid.jpg");
+}
+
+.photo4 {
+    grid-area: p4;
+    background-image: url("../images/swnvatican.jpg");
+}
+
+.bloglist {
+    grid-area: bl;
+}
+
+.faves {
+    margin: 30px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+/* Required typography */
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
+    color: #022340;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: #022340;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    color: #022340;
+}
+
+h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+    text-decoration: underline;
+}
+
+blockquote {
+    margin: 20px;
+    padding: 10px 10px 30px 30px;
+    border: 1px;
+    border-radius: 4px;
+    background-color: #F2F2F2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+button {
+    font-family: 'Dosis', sans-serif;
+    padding: 10px;
+    background-color: #3F4859;
+    font-weight: bold;
+}
+
+strong {
+    font-weight: 900;
+    color: #3F4859;
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+
+em {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: #3F4859;
+    font-size: 20px;
+}
+
+u {
+    text-decoration: underline;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: #3F4859;
+    font-size: 20px;
+}
+
+/* Other */
+
+body {
+    background-color: #F2F2F2;
+}
+
+ul {
+    list-style: none;
+    align: center;
+    line-height: 40px;
+}
+
+li {
+    font-family: 'Quicksand', sans-serif;
+    align: left;
+    line-height: 40px;
+}
+
+.icon {
+    width: 80px;
+}
+
+/* Media query to make responsive */
+@media (min-width:900px){
+    .container {
+        margin: 5%;
+        grid-template-columns: repeat(3, 1fr) 33%;
+        grid-template-rows: 250px;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "nb nb nb nb"
+        "cont cont cont sd"
+        "ft ft ft ft";
+        }
+
+    .header {
+        background-image: url("../images/swnbanner.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "p1 p2"
+            "p3 p4";
+    }
+
+    .sidebar {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
