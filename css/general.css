@@ -1,0 +1,33 @@
+body {
+    background-color: #F2F2F2;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #022340;
+}
+
+
+ul {
+    list-style: none;
+    align: center;
+    line-height: 40px;
+}
+
+li {
+    font-family: 'Quicksand', sans-serif;
+    align: left;
+    line-height: 40px;
+}

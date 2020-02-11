@@ -1,0 +1,27 @@
+.navbar {
+    grid-area:nb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    font-family: 'Dosis', sans-serif;
+}
+
+.navbox {
+    padding: 4px;
+}
+
+.navbox:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+}
+
+footer {
+    grid-area:ft;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40px;
+    font-family: 'Dosis', sans-serif;
+}
